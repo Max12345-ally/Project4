@@ -69,4 +69,4 @@ Comments(Stretch)
 
 ### Wireframes
 
-[link] (https://github.com/Max12345-ally/Project4/blob/main/1_MainPage.png)
+[link](/Users/user/homework/project4/1_MainPage (1).png)
