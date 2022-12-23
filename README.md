@@ -45,24 +45,26 @@ Post-MVP
 
 User
 
-Username: String
-Password: String
-User ID: String
-Asset:[Asset]
+- Username: String
+- Password: String
+- User ID: String
+- Asset:[Asset]
 
 Asset
 
-User: UserId
-Image: Photo, Video (upload)
-Title: String
-Comments;[Comments]
+- User: UserId
+- Image: Photo, Video (upload)
+- Title: String
+- Comments;[Comments]
 
 Comments(Stretch)
 
-Content: String
-Time: DateTime
-User: User
+- Content: String
+- Time: DateTime
+- User: User
 
 ## ERD
 
-! [erd](https://github.com/Max12345-ally/Project4/blob/main/2022-12-23%2018.23.49.jpg)
+[erd](https://github.com/Max12345-ally/Project4/blob/main/2022-12-23%2018.23.49.jpg)
+
+### Wireframes
