@@ -68,3 +68,5 @@ Comments(Stretch)
 [erd](https://github.com/Max12345-ally/Project4/blob/main/2022-12-23%2018.23.49.jpg)
 
 ### Wireframes
+
+[link] (https://github.com/Max12345-ally/Project4/blob/main/1_MainPage.png)
