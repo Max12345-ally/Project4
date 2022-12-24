@@ -1,7 +1,7 @@
 const express = require("express");
-const Topic = require("../models/digital-assets");
+const Topic = require("../models/Asset");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  Topic.find().then((assets) => res.json(assets));
+  Asset.find().then((assets) => res.json(assets));
 });

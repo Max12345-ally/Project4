@@ -1,10 +1,15 @@
 const mongoose = reqiure("mongoose");
+require("dotenv").config();
+
+const mongoURI =
+  process.env.NODE_ENV === "production"
+    ? process.env.MONGO_URI
+    : "mongodb://localhost/digital-assets";
 
 mongoose
-  .connect("mongodb://localhost/digital-assets")
+  .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+
   .then((instance) =>
     console.log(`Connected to db: ${instance.connections[0].name}`)
   )
-  .catch((error) => console.log("Connection failed", error));
-
-module.exports = mongoose;
+  .catch((error) => console.log("Connection failed!", error));

@@ -1,12 +1,10 @@
-const mongoose = require('../db/connection')
-const Schema = mongoose.Schema
+const mongoose = require("../db/connection");
+const Schema = mongoose.Schema;
 
 const Assest = new Schema({
-    firstName = String,
-    lastName = String,
-    comments = String
+  firstName: String,
+  lastName: String,
+  comments: String,
+});
 
-
-})
-
-module.exports = mongoose.model('Topic', Topic)
+module.exports = mongoose.model("Topic", Topic);
