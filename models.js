@@ -27,7 +27,6 @@ const assetSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
-    required: true,
   },
   image: {
     type: String,
@@ -37,6 +36,12 @@ const assetSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  comments: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Comment",
+    },
+  ],
 });
 
 const commentSchema = new mongoose.Schema({
