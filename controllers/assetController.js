@@ -62,4 +62,15 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+router.post("/likes", async (req, res, next) => {
+  console.log(req.body);
+  try {
+    // const assets = await Asset.create(req.body);
+
+    res.json({ f: "bar" });
+  } catch (err) {
+    next(err);
+  }
+});
+
 module.exports = router;

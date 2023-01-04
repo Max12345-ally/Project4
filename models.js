@@ -42,6 +42,14 @@ const assetSchema = new mongoose.Schema({
       ref: "Comment",
     },
   ],
+  likes: [
+    {
+      type: String,
+    },
+  ],
+  category: {
+    type: String,
+  },
 });
 
 const commentSchema = new mongoose.Schema({
