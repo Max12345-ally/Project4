@@ -12,11 +12,7 @@ const app = express();
 // Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-  })
-);
+app.use(cors());
 
 const assetController = require("./controllers/assetController");
 app.use("/api/assets/", assetController);
