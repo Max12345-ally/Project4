@@ -1,32 +1,37 @@
 const mongoose = require("./db/connection");
 
 const userSchema = new mongoose.Schema({
-  username: {
+  email: {
     type: String,
     required: true,
     unique: true,
   },
-  password: {
+  fullName: {
     type: String,
     required: true,
   },
-  id: {
-    type: mongoose.Schema.Types.ObjectId,
+  title: {
+    type: String,
     required: true,
-    unique: true,
   },
-  assets: [
-    {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "Asset",
-    },
-  ],
+  about: {
+    type: String,
+    required: true,
+  },
+  avatarLink: {
+    type: String,
+    required: true,
+  },
 });
 
 const assetSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
+  },
+  userName: {
+    type: String,
+    required: true,
   },
   image: {
     type: String,

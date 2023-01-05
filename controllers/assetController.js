@@ -6,6 +6,21 @@ router.get("/", (req, res) => {
   Asset.find().then((assets) => res.json(assets));
 });
 
+router.get("/:email", async (req, res) => {
+  const { email } = req.params;
+
+  try {
+    const assets = await Asset.find({
+      username: email,
+    });
+
+    res.json(assets);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Error retrieving user assets");
+  }
+});
+
 router.put("/:id", (req, res) => {
   console.log(req.params.id);
   Asset.findOneAndUpdate({ _id: req.params.id }, req.body, {
