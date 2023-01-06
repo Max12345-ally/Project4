@@ -11,7 +11,7 @@ router.get("/:email", async (req, res) => {
 
   try {
     const assets = await Asset.find({
-      username: email,
+      userName: email,
     });
 
     res.json(assets);
