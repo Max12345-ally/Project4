@@ -3,16 +3,24 @@
 Max Bondar
 
 ## Project Idea
+Beehance. 
+Looking for inspiration?
+An app where you can share your digital assets for the creative people.
+Share your creative solutions, get feedback from our global community.
+See the best projects across graphic design, illustration, photography, 3D art and more.
+Boost your professional confidence. Find new colleagues or friends!
 
-An app where you can share your digital assests for the creative people.
+## Links
+
+[deployment](https://project4-frontend.vercel.app/)
+[frontend](https://github.com/Max12345-ally/Project4_frontend)
+[backend](https://github.com/Max12345-ally/Project4)
 
 ## Your tech stack (frontend, backend, database)
 
 Front-end: HTML, CSS, JavaScript, React, FireBase
 Back-end: Mongo, Node, Express
-Deployment: Yandex.Cloud
-
-## List of backend models and their properties
+Deployment: Vercel/Heroku
 
 ## User stories
 
@@ -33,35 +41,32 @@ Post-MVP
 ## React component hierarchy
 
 - APP
-- Navbar??
+- Navbar
 - Header
 - About
 - Login
 - Collection of digital assets
 - Asset card
-- Footer
+
 
 ## List of backend models and their properties
 
-User
+- User:
 
-- Username: String
-- Password: String
-- User ID: String
-- Asset:[Asset]
+- email: String
+- fullName: String
+- title: String
+- about: String
+- avatarLink: String
+    
 
-Asset
+- Asset:
 
-- User: UserId
-- Image: Photo, Video (upload)
-- Title: String
-- Comments;[Comments]
-
-Comments(Stretch)
-
-- Content: String
-- Time: DateTime
-- User: User
+  - user: ref: "User"
+  - userName: String
+  - image: String
+  - title: String
+   
 
 ## ERD
 
